@@ -50,7 +50,12 @@ function formatDate(dateString: string) {
   }).format(new Date(dateString));
 }
 
-type BlogPageProps = { params: { slug: string } };
+// ✅ FIXED — Correct props type
+type BlogPageProps = {
+  params: {
+    slug: string;
+  };
+};
 
 // ======================
 // META DATA
