@@ -5,7 +5,7 @@ import { PortableText } from "@portabletext/react";
 import { sanityClient } from "../../../../sanity/lib/sanityClient";
 import { urlFor } from "../../../../sanity/lib/sanityImage";
 import ArticleActions from "@/app/components/ArticleActions";
-import PostFade from "./PostFade"; // Fade wrapper
+import PostFade from "./PostFade";
 import Link from "next/link";
 
 type BlogPost = {
@@ -50,18 +50,11 @@ function formatDate(dateString: string) {
   }).format(new Date(dateString));
 }
 
-// ✅ FIXED — Correct props type
-type BlogPageProps = {
-  params: {
-    slug: string;
-  };
-};
-
 // ======================
 // META DATA
 // ======================
 export async function generateMetadata(
-  { params }: BlogPageProps,
+  { params }: any,
   _parent: ResolvingMetadata
 ): Promise<Metadata> {
   const post = (await sanityClient.fetch(POST_QUERY, {
@@ -103,7 +96,7 @@ export async function generateStaticParams() {
 // ======================
 // PAGE RENDER
 // ======================
-export default async function BlogPostPage({ params }: BlogPageProps) {
+export default async function BlogPostPage({ params }: any) {
   const post = (await sanityClient.fetch(POST_QUERY, {
     slug: params.slug,
   })) as BlogPost | null;
@@ -119,7 +112,7 @@ export default async function BlogPostPage({ params }: BlogPageProps) {
           {formatDate(post.publishedAt)}
         </p>
 
-        {/* TITLE — FADE-IN */}
+        {/* TITLE */}
         <PostFade>
           <h1 className="text-4xl md:text-5xl font-bold text-[#2d459c] leading-tight mb-6">
             {post.title}
@@ -131,7 +124,7 @@ export default async function BlogPostPage({ params }: BlogPageProps) {
           <p className="text-base text-gray-600 mb-8">By {post.author.name}</p>
         )}
 
-        {/* MAIN IMAGE — FADE-IN */}
+        {/* MAIN IMAGE */}
         <PostFade>
           {post.mainImage?.asset && (
             <div className="relative w-full mb-12 rounded-xl overflow-hidden shadow-md">
@@ -146,7 +139,7 @@ export default async function BlogPostPage({ params }: BlogPageProps) {
           )}
         </PostFade>
 
-        {/* ARTICLE BODY — FADE-IN */}
+        {/* BODY */}
         <PostFade>
           <div
             className="
@@ -161,7 +154,7 @@ export default async function BlogPostPage({ params }: BlogPageProps) {
           </div>
         </PostFade>
 
-        {/* BACK TO BLOG LINK — FADE-IN */}
+        {/* BACK LINK */}
         <PostFade>
           <div className="mt-12">
             <Link
@@ -173,7 +166,7 @@ export default async function BlogPostPage({ params }: BlogPageProps) {
           </div>
         </PostFade>
 
-        {/* SHARE, LIKE, COPY, ETC */}
+        {/* SHARE / COPY */}
         <ArticleActions title={post.title} />
 
       </article>
