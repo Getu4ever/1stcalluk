@@ -1,18 +1,11 @@
 "use client";
+
 import { useState } from "react";
 import "./globals.css";
 import Link from "next/link";
 import Footer from "./components/Footer";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { version } from "@/lib/version";
-
-export const metadata = {
-  icons: {
-    icon: `/favicon.ico?v=${version}`,
-  },
-};
-
 
 export default function RootLayout({
   children,
@@ -21,16 +14,13 @@ export default function RootLayout({
 }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // ✅ Detect if we are on /studio
   const pathname = usePathname();
   const isStudio = pathname?.startsWith("/studio");
 
   return (
     <html lang="en">
       <body className="min-h-screen overflow-x-hidden bg-white text-gray-900">
-
         {isStudio ? (
-          // 🚀 No header, no footer on /studio
           <>{children}</>
         ) : (
           <>
