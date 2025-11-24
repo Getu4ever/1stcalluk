@@ -1,11 +1,18 @@
 "use client";
-
 import { useState } from "react";
 import "./globals.css";
 import Link from "next/link";
 import Footer from "./components/Footer";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { version } from "@/lib/version";
+
+export const metadata = {
+  icons: {
+    icon: `/favicon.ico?v=${version}`,
+  },
+};
+
 
 export default function RootLayout({
   children,
