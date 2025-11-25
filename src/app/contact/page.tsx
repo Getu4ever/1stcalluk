@@ -71,7 +71,7 @@ export default function ContactPage() {
 
           <p className="text-gray-700 mb-6 leading-relaxed">
             You can <strong>send us a message</strong> or <strong>book a call</strong> with our senior
-            immigration adviser <strong>James Ramowski</strong>.
+            immigration adviser <strong>James</strong>.
             <br /><br />
             We reply to messages within <strong>two working days</strong>.
           </p>
@@ -133,7 +133,6 @@ export default function ContactPage() {
             )}
             {status === "error" && (
               <p className="text-red-600 text-center mt-3">
-                ❌ Something went wrong. Please try again.
               </p>
             )}
           </form>
@@ -144,7 +143,7 @@ export default function ContactPage() {
   <h2 className="text-2xl font-bold text-[#2d459c] mb-4 text-center">
  Book a Call (30 Minutes)  </h2>
   <iframe
-    src="https://calendly.com/james-ramowski/30min?hide_event_type_details=1&hide_gdpr_banner=1"
+    src="https://calendly.com/james-ramowski/30min?hide_event_type_details=1&background_color=ffffff&text_color=2d459c&primary_color=2d459c"
     className="rounded-lg border border-gray-200 shadow-sm w-full"
     style={{
       height: "580px",   // You can adjust this height freely

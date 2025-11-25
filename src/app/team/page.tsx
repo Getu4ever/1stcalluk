@@ -39,7 +39,7 @@ export default function TeamPage() {
             </h1>
             <p className="text-gray-700 leading-relaxed">
               At <strong>1st Call UK</strong>, we believe our clients’ needs come before our own.
-              The founder of 1st Call UK, <strong>James Ramowski</strong>, established the firm
+              The founder of 1st Call UK, <strong>James</strong>, established the firm
               with a vision to deliver affordable, caring, and high-quality immigration advice —
               treating every client with the same dedication and respect we would show our own
               families and friends. At 1st Call UK, our clients always come first.
@@ -77,10 +77,10 @@ export default function TeamPage() {
           {/* ⭐ NEW SECTION: Biography of James Ramowski (Inserted Here) */}
           <section className="fade-section bg-[#f8f9ff] border border-[#dfe3ff] rounded-2xl p-6 md:p-8 shadow-sm">
             <h2 className="text-2xl font-semibold text-[#2d459c] mb-3">
-              About James Ramowski
+              About James - Our Senior Adviser
             </h2>
             <p className="text-gray-700 leading-relaxed">
-              <strong>James Ramowski</strong> is the Founder and Principal Immigration Adviser at
+              <strong>James</strong> is the Founder and Principal Immigration Adviser at
               1st Call UK Immigration Services. With more than two decades of legal experience,
               James has established himself as one of Nottingham’s most trusted immigration
               specialists. His career began with voluntary work supporting vulnerable asylum
