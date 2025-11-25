@@ -1,3 +1,4 @@
+
 export const metadata = {
   title: "Consumer Contracts Regulations 2013 | 1st Call UK",
   description:
@@ -6,7 +7,7 @@ export const metadata = {
 
 export default function ConsumerContractsPage() {
   return (
-    <main className="min-h-screen bg-gray-100 py-12 px-6">
+<main className="min-h-screen bg-gray-50 py-12 px-6 animate-fade-in">
       <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-200">
 
         {/* Header Section */}

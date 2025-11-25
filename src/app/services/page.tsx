@@ -75,14 +75,14 @@ export default function ServicesPage() {
     <main className="min-h-screen bg-gray-50 py-16 px-6">
       <div className="max-w-7xl mx-auto">
         {/* Page Header */}
-        <h1 className="text-4xl font-extrabold text-center text-[#2d459c] mb-4">
-          Our Professional Immigration Services
-        </h1>
-        <p className="text-center text-gray-700 mb-12 max-w-3xl mx-auto leading-relaxed">
-          At <strong>1st Call UK – Immigration Services</strong>, we provide tailored, expert
-          immigration support for individuals, families, and businesses across the UK.
-          Explore our key service areas below to see how we can help you achieve your goals.
-        </p>
+        <h1 className="text-4xl font-extrabold text-center text-[#2d459c] mb-4 animate-fade-in opacity-0">
+  Our Professional Immigration Services
+</h1>
+        <p className="text-center text-gray-700 mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in opacity-0" style={{ animationDelay: "0.15s" }}>
+  At <strong>1st Call UK – Immigration Services</strong>, we provide tailored, expert
+  immigration support for individuals, families, and businesses across the UK.
+  Explore our key service areas below to see how we can help you achieve your goals.
+</p>
 
         {/* Services Grid */}
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
