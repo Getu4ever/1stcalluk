@@ -32,34 +32,35 @@ export default function RootLayout({
     <div className="flex flex-col items-start gap-4">
 
       {/* Logo */}
-      <Link href="/" className="block">
-        <div className="w-[260px] h-[100px] relative bg-white rounded-xl shadow-md border border-white/40 overflow-hidden">
-          <Image
-            src="/1st-calluk-logo02.jpg"
-            alt="1st Call UK Immigration Advisers Logo — go to homepage"
-            fill
-            priority
-            className="object-contain p-2"
-          />
-        </div>
-      </Link>
+        <div className="flex flex-col items-start gap-4 pl-3 md:pl-4">
+  <Link href="/" className="block">
+    <div className="w-[260px] h-[100px] relative bg-white rounded-xl shadow-md border border-white/40 overflow-hidden">
+      <Image
+        src="/1st-calluk-logo02.jpg"
+        alt="1st Call UK Immigration Advisers Logo — go to homepage"
+        fill
+        priority
+        className="object-contain p-2"
+      />
+    </div>
+  </Link>
 
-      {/* Contact Buttons (below logo) */}
-      <div className="hidden md:flex gap-4">
-        <a
-          href="tel:+441158453325"
-          className="bg-white text-[#2d459c] font-semibold py-2 px-5 rounded-lg shadow hover:bg-gray-100 transition-colors duration-300 flex items-center gap-2"
-        >
-          📞 Call Us
-        </a>
+  <div className="hidden md:flex gap-4">
+    <a
+      href="tel:+441158453325"
+      className="bg-white text-[#2d459c] font-semibold py-2 px-5 rounded-lg shadow hover:bg-gray-100 transition-colors duration-300 flex items-center gap-2"
+    >
+      📞 Call Us
+    </a>
+    <a
+      href="mailto:info@karoldigital.co.uk"
+      className="bg-white text-[#2d459c] font-semibold py-2 px-5 rounded-lg shadow hover:bg-gray-100 transition-colors duration-300 flex items-center gap-2"
+    >
+      ✉️ Email Us
+    </a>
+  </div>
+</div>
 
-        <a
-          href="mailto:info@karoldigital.co.uk"
-          className="bg-white text-[#2d459c] font-semibold py-2 px-5 rounded-lg shadow hover:bg-gray-100 transition-colors duration-300 flex items-center gap-2"
-        >
-          ✉️ Email Us
-        </a>
-      </div>
 
     </div>
 
