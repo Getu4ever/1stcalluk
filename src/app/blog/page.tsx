@@ -79,9 +79,10 @@ export default async function BlogPage() {
                 )}
 
                 <div className="p-6 flex flex-col flex-grow">
-                  <p className="text-xs text-gray-500 mb-1">
-                    {formatDate(post.publishedAt)}
-                  </p>
+                  <p className="text-sm text-gray-600 font-medium tracking-wide mb-1">
+  {formatDate(post.publishedAt)}
+</p>
+
                   <h2 className="text-xl font-semibold text-[#2d459c] mb-2">
                     {post.title}
                   </h2>

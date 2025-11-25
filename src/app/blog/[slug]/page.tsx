@@ -108,9 +108,10 @@ export default async function BlogPostPage({ params }: any) {
       <article className="max-w-3xl mx-auto bg-white rounded-2xl shadow-md p-8 md:p-12 mt-10">
 
         {/* DATE */}
-        <p className="text-sm text-gray-500 mb-3">
-          {formatDate(post.publishedAt)}
-        </p>
+        <p className="text-sm text-gray-600 font-medium tracking-wide mb-1">
+  {formatDate(post.publishedAt)}
+</p>
+
 
         {/* TITLE */}
         <PostFade>

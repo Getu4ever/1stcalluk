@@ -46,7 +46,7 @@ export default function ReviewsPage() {
             <p className="text-gray-700 max-w-3xl mx-auto leading-relaxed mb-4">
               At <strong>1st Call UK Immigration Services</strong>, we’re proud
               of the trust our clients place in us. With over{" "}
-              <strong>200 successful visa applications</strong> and a reputation
+              <strong>300 a year successful visa applications</strong> and a reputation
               for care and professionalism, our team is dedicated to achieving
               the best results for every individual and family we serve.
             </p>
