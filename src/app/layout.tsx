@@ -24,43 +24,47 @@ export default function RootLayout({
           <>{children}</>
         ) : (
           <>
-        {/* ===== HEADER ===== */}
+       {/* ===== HEADER ===== */}
 <header className="bg-[#2d459c] text-white py-8 shadow-lg relative z-50">
   <div className="max-w-7xl mx-auto flex items-center justify-between px-4 md:px-6">
-    {/* Left — Logo & Contact */}
-<div className="flex flex-col items-start space-y-4 translate-x-[-12px]">
-  <Link href="/" className="block">
-    <div className="w-[260px] h-[100px] relative rounded-xl shadow-md bg-white border border-white/40 overflow-hidden">
-      <Image
-        src="/1st-calluk-logo02.jpg"
-        alt="1st Call UK Immigration Advisers Logo — go to homepage"
-        fill
-        priority
-        className="object-contain p-2"
-      />
+
+    {/* LEFT COLUMN — LOGO + CONTACT BUTTONS */}
+    <div className="flex flex-col items-start gap-4">
+
+      {/* Logo */}
+      <Link href="/" className="block">
+        <div className="w-[260px] h-[100px] relative bg-white rounded-xl shadow-md border border-white/40 overflow-hidden">
+          <Image
+            src="/1st-calluk-logo02.jpg"
+            alt="1st Call UK Immigration Advisers Logo — go to homepage"
+            fill
+            priority
+            className="object-contain p-2"
+          />
+        </div>
+      </Link>
+
+      {/* Contact Buttons (below logo) */}
+      <div className="hidden md:flex gap-4">
+        <a
+          href="tel:+441158453325"
+          className="bg-white text-[#2d459c] font-semibold py-2 px-5 rounded-lg shadow hover:bg-gray-100 transition-colors duration-300 flex items-center gap-2"
+        >
+          📞 Call Us
+        </a>
+
+        <a
+          href="mailto:info@karoldigital.co.uk"
+          className="bg-white text-[#2d459c] font-semibold py-2 px-5 rounded-lg shadow hover:bg-gray-100 transition-colors duration-300 flex items-center gap-2"
+        >
+          ✉️ Email Us
+        </a>
+      </div>
+
     </div>
-  </Link>
 
-
-  <div className="hidden md:flex gap-4">
-    <a
-      href="tel:+441158453325"
-      className="bg-white text-[#2d459c] font-semibold py-2 px-5 rounded-lg shadow hover:bg-gray-100 transition-colors duration-300 flex items-center gap-2"
-    >
-      📞 Call Us
-    </a>
-    <a
-      href="mailto:info@karoldigital.co.uk"
-      className="bg-white text-[#2d459c] font-semibold py-2 px-5 rounded-lg shadow hover:bg-gray-100 transition-colors duration-300 flex items-center gap-2"
-    >
-      ✉️ Email Us
-    </a>
-  </div>
-</div>
-
-
-    {/* Desktop Nav */}
-    <nav className="nav-menu hidden lg:flex items-center gap-6 xl:gap-8 text-sm xl:text-base font-medium whitespace-nowrap">
+    {/* DESKTOP NAV */}
+    <nav className="hidden lg:flex items-center gap-6 xl:gap-8 text-sm xl:text-base font-medium whitespace-nowrap">
       {[
         { href: "/", label: "Home" },
         { href: "/about", label: "About" },
@@ -77,7 +81,7 @@ export default function RootLayout({
           <Link
             key={href}
             href={href}
-            className={`relative group transition-all duration-300 ${
+            className={`relative group transition duration-300 ${
               isActive ? "text-yellow-300" : "text-white"
             } hover:text-yellow-300`}
           >
@@ -86,38 +90,38 @@ export default function RootLayout({
               className={`absolute left-0 -bottom-1 h-[3px] bg-yellow-300 transition-all duration-300 ${
                 isActive ? "w-full" : "w-0 group-hover:w-full"
               }`}
-            ></span>
+            />
           </Link>
         );
       })}
     </nav>
 
-    {/* Hamburger Button */}
+    {/* MOBILE MENU BUTTON */}
     <button
-      className="lg:hidden flex flex-col items-center justify-center space-y-1 focus:outline-none"
+      className="lg:hidden flex flex-col items-center justify-center space-y-1"
       aria-label="Toggle navigation"
       aria-expanded={menuOpen}
       onClick={() => setMenuOpen((v) => !v)}
     >
       <span
-        className={`block h-0.5 w-7 bg-white transform transition duration-300 ${
+        className={`block h-0.5 w-7 bg-white transform transition ${
           menuOpen ? "rotate-45 translate-y-2" : ""
         }`}
       />
       <span
-        className={`block h-0.5 w-7 bg-white transition duration-300 ${
+        className={`block h-0.5 w-7 bg-white transition ${
           menuOpen ? "opacity-0" : "opacity-100"
         }`}
       />
       <span
-        className={`block h-0.5 w-7 bg-white transform transition duration-300 ${
+        className={`block h-0.5 w-7 bg-white transform transition ${
           menuOpen ? "-rotate-45 -translate-y-2" : ""
         }`}
       />
     </button>
   </div>
 
-  {/* Mobile Menu */}
+  {/* MOBILE MENU */}
   <div
     className={`lg:hidden absolute left-0 right-0 w-full bg-[#2d459c] shadow-lg transition-[max-height,opacity] duration-300 overflow-hidden ${
       menuOpen ? "max-h-[520px] opacity-100" : "max-h-0 opacity-0"
@@ -144,17 +148,20 @@ export default function RootLayout({
           {label}
         </Link>
       ))}
+
+      {/* Mobile Contact Buttons */}
       <div className="flex gap-3 pt-2">
         <a
           href="tel:+441158453325"
-          className="bg-white text-[#2d459c] font-semibold py-1.5 px-4 rounded-md shadow hover:bg-gray-100 transition"
+          className="bg-white text-[#2d459c] font-semibold py-2 px-4 rounded-lg shadow hover:bg-gray-100 transition"
           onClick={() => setMenuOpen(false)}
         >
           📞 Call
         </a>
+
         <a
           href="mailto:info@karoldigital.co.uk"
-          className="bg-white text-[#2d459c] font-semibold py-1.5 px-4 rounded-md shadow hover:bg-gray-100 transition"
+          className="bg-white text-[#2d459c] font-semibold py-2 px-4 rounded-lg shadow hover:bg-gray-100 transition"
           onClick={() => setMenuOpen(false)}
         >
           ✉ Email
