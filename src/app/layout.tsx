@@ -30,15 +30,17 @@ export default function RootLayout({
     {/* Left — Logo & Contact */}
 <div className="flex flex-col items-start space-y-4 translate-x-[-12px]">
   <Link href="/" className="block">
-    <Image
-      src="/1st-calluk-logo02.jpg"
-      alt="1st Call UK Immigration Advisers Logo — go to homepage"
-      width={260}
-      height={100}
-      priority
-      className="rounded-xl shadow-md hover:opacity-90 transition-opacity duration-300 border border-white/40"
-    />
+    <div className="w-[260px] h-[100px] relative rounded-xl shadow-md bg-white border border-white/40 overflow-hidden">
+      <Image
+        src="/1st-calluk-logo02.jpg"
+        alt="1st Call UK Immigration Advisers Logo — go to homepage"
+        fill
+        priority
+        className="object-contain p-2"
+      />
+    </div>
   </Link>
+
 
   <div className="hidden md:flex gap-4">
     <a
