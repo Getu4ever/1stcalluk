@@ -28,7 +28,7 @@ export default function RootLayout({
 <header className="bg-[#2d459c] text-white py-8 shadow-lg relative z-50">
   <div className="max-w-7xl mx-auto flex items-center justify-between px-4 md:px-6">
     {/* Left — Logo & Contact */}
-<div className="flex flex-col items-start space-y-4 translate-x-[-20px]">
+<div className="flex flex-col items-start space-y-4 translate-x-[-12px]">
   <Link href="/" className="block">
     <Image
       src="/1st-calluk-logo02.jpg"
