@@ -59,7 +59,7 @@ export default function HomePage() {
           {/* ===== Added Link to Team Page (ONLY NEW ADDITION) ===== */}
           <div className="pt-2">
             <a
-              href="/team"
+              href="/our-immigration-team"
               className="text-[#2d459c] font-semibold hover:underline"
             >
               Meet Our Team →

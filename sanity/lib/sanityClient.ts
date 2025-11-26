@@ -1,8 +1,9 @@
-import { createClient } from "next-sanity";
+import { createClient } from "@sanity/client";
 
 export const sanityClient = createClient({
-  projectId: "gwozhq55",        // your projectId from sanity.config.ts
-  dataset: "production",        // your dataset
-  apiVersion: "2025-01-01",     // any recent date; controls GROQ features
-  useCdn: true,                 // use the edge cache for faster, public data
+  projectId: process.env.SANITY_PROJECT_ID,
+  dataset: process.env.SANITY_DATASET,
+  apiVersion: "2023-08-01",
+  token: process.env.SANITY_WRITE_TOKEN,   // ADD THIS
+  useCdn: false,
 });

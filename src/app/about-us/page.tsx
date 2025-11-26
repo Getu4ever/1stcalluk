@@ -91,7 +91,7 @@ export default function AboutPage() {
             {/* ⭐ Meet Our Team Link */}
             <div className="text-center mt-8 fade-block opacity-0">
               <a
-                href="/team"
+                href="/our-immigration-team"
                 className="inline-block px-8 py-3 bg-[#2d459c] text-white font-semibold rounded-md shadow-md hover:bg-[#22347a] transition duration-300"
               >
                 Meet Our Team →
