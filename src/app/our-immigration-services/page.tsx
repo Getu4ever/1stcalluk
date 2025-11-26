@@ -1,5 +1,6 @@
 "use client";
 import { useEffect } from "react";
+import Image from "next/image";
 
 export default function ServicesPage() {
   const services = [
@@ -53,7 +54,7 @@ export default function ServicesPage() {
     },
   ];
 
-  // ✅ Scroll fade-in effect on service cards
+  // Fade-in effect
   useEffect(() => {
     const cards = document.querySelectorAll(".service-card");
     const observer = new IntersectionObserver(
@@ -69,33 +70,40 @@ export default function ServicesPage() {
     );
 
     cards.forEach((card) => observer.observe(card));
+
+    return () => observer.disconnect();
   }, []);
 
   return (
     <main className="min-h-screen bg-gray-50 py-16 px-6">
       <div className="max-w-7xl mx-auto">
-        {/* Page Header */}
-        <h1 className="text-4xl font-extrabold text-center text-[#2d459c] mb-4 animate-fade-in opacity-0">
-  Our Professional Immigration Services
-</h1>
-        <p className="text-center text-gray-700 mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in opacity-0" style={{ animationDelay: "0.15s" }}>
-  At <strong>1st Call UK – Immigration Services</strong>, we provide tailored, expert
-  immigration support for individuals, families, and businesses across the UK.
-  Explore our key service areas below to see how we can help you achieve your goals.
-</p>
+        <h1 className="opacity-0 animate-fade-in text-4xl font-extrabold text-center text-[#2d459c] mb-4">
+          Our Professional Immigration Services
+        </h1>
 
-        {/* Services Grid */}
+        <p
+          className="opacity-0 animate-fade-in text-center text-gray-700 mb-12 max-w-3xl mx-auto leading-relaxed"
+          style={{ animationDelay: "0.15s" }}
+        >
+          At <strong>1st Call UK – Immigration Services</strong>, we provide tailored, expert
+          immigration support for individuals, families, and businesses across the UK.
+          Explore our key service areas below to see how we can help you achieve your goals.
+        </p>
+
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service, index) => (
             <div
               key={index}
               className="service-card opacity-0 bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-500 overflow-hidden flex flex-col"
             >
-              <img
+              <Image
                 src={service.image}
                 alt={service.title}
+                width={800}
+                height={450}
                 className="w-full h-56 object-cover"
               />
+
               <div className="p-6 flex flex-col flex-grow">
                 <h2 className="text-2xl font-semibold text-[#2d459c] mb-3">
                   {service.title}
@@ -108,16 +116,14 @@ export default function ServicesPage() {
           ))}
         </div>
 
-        {/* Call to Action */}
         <div className="text-center mt-16">
           <p className="text-gray-700 mb-4">
             Ready to discuss your immigration needs? Schedule a meeting with one of our
             experienced advisers and take the first step toward your immigration goals.
           </p>
+
           <a
-            href="/contact" // 👉 Replace this with your booking link
-            target="_self"
-            rel="noopener noreferrer"
+            href="/contact"
             className="inline-block bg-[#2d459c] hover:bg-[#22347a] text-white font-semibold py-3 px-8 rounded-md shadow-md transition duration-300"
           >
             Schedule a Meeting

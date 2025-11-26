@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Best Immigration Lawyer in Nottingham | UK Visa & Appeal Specialists | 1st Call UK",
+  description:
+    "Leading UK immigration lawyers in Nottingham. Visa applications, spouse visas, appeals, asylum claims, work visas, sponsor licences & more. Over 300+ 5-star reviews. Book a free consultation today.",
+};
+
 export default function HomePage() {
   return (
     <main className="min-h-screen bg-gray-50">

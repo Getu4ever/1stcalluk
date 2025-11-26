@@ -3,7 +3,7 @@ import Image from "next/image";
 import { sanityClient } from "../../../sanity/lib/sanityClient";
 import type { Metadata } from "next";
 import { urlFor } from "../../../sanity/lib/sanityImage";
-import BlogFade from "./BlogFade";   // <-- ADD THIS
+import BlogFade from "./BlogFade";
 
 type BlogPostCard = {
   _id: string;
@@ -25,12 +25,6 @@ const BLOG_QUERY = `
 }
 `;
 
-export const metadata: Metadata = {
-  title: "UK Immigration Insights & Updates | 1st Call UK Immigration Services",
-  description:
-    "Articles and guidance on UK immigration law, visa routes, appeals and status from 1st Call UK Immigration Services in Nottingham.",
-};
-
 function formatDate(dateString: string) {
   return new Intl.DateTimeFormat("en-GB", {
     day: "2-digit",
@@ -45,10 +39,12 @@ export default async function BlogPage() {
   return (
     <main className="min-h-screen bg-gray-50 py-16 px-6">
       <BlogFade>
+        {/* IMPORTANT: blog-fade kept here to preserve your animation logic */}
         <div className="max-w-6xl mx-auto blog-fade">
           <h1 className="text-4xl font-extrabold text-center text-[#2d459c] mb-4">
             Immigration News & Insights
           </h1>
+
           <p className="text-center text-gray-700 mb-10 max-w-3xl mx-auto leading-relaxed">
             Practical articles and commentary on UK immigration and asylum law
             from the team at 1st Call UK Immigration Services.
@@ -73,15 +69,15 @@ export default async function BlogPage() {
                       alt={post.title}
                       width={800}
                       height={450}
-                      className="w-full h-auto object-contain"
+                      className="w-full h-full object-cover"
                     />
                   </div>
                 )}
 
                 <div className="p-6 flex flex-col flex-grow">
                   <p className="text-sm text-gray-600 font-medium tracking-wide mb-1">
-  {formatDate(post.publishedAt)}
-</p>
+                    {formatDate(post.publishedAt)}
+                  </p>
 
                   <h2 className="text-xl font-semibold text-[#2d459c] mb-2">
                     {post.title}
@@ -105,7 +101,6 @@ export default async function BlogPage() {
               </article>
             ))}
           </div>
-
         </div>
       </BlogFade>
     </main>
