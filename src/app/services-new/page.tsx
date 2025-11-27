@@ -48,7 +48,7 @@ export default function ServicesPage() {
   },
   {
     title: "Appeals to the Upper Tribunal",
-    image: "/upper-tribunal.jpg",
+    image: "/upper-tribunal.png",
     description:
       "We represent clients seeking to challenge First-tier Tribunal decisions. Our service includes drafting expert legal submissions, preparing evidence bundles, and presenting strong grounds of appeal before the Upper Tribunal.",
   },
