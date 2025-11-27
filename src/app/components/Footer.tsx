@@ -152,7 +152,7 @@ export default function Footer() {
 
           <div className="mt-5 flex flex-col gap-3">
             <a
-              href="mailto:info@karoldigital.co.uk"
+              href="mailto:info@1stcalluk.com"
               className="bg-white text-[#2d459c] font-semibold py-2 px-5 rounded-md hover:bg-gray-100 flex items-center justify-center transition"
             >
               ✉ Email

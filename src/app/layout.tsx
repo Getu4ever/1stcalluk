@@ -50,7 +50,7 @@ export default function RootLayout({
                         📞 Call Us
                       </a>
                       <a
-                        href="mailto:info@karoldigital.co.uk"
+                        href="mailto:info@1stcalluk.com"
                         className="bg-white text-[#2d459c] font-semibold py-2 px-5 rounded-lg shadow hover:bg-gray-100 transition-colors duration-300 flex items-center gap-2"
                       >
                         ✉️ Email Us
