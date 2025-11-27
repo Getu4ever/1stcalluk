@@ -34,7 +34,7 @@ export default function RootLayout({
                       <div className="w-[260px] h-[100px] relative bg-white rounded-xl shadow-md border border-white/40 overflow-hidden">
                         <Image
                           src="/1st-calluk-logo02.jpg"
-                          alt="1st Call UK Immigration Advisers Logo — go to homepage"
+                          alt="1st Call UK Immigration advisors Logo — go to homepage"
                           fill
                           priority
                           className="object-contain p-2"

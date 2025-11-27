@@ -184,3 +184,9 @@ body {
   opacity: 1 !important;
   transform: translateY(0) !important;
 }
+/* Fix: Ensure form fields have visible text in light and dark mode */
+input,
+textarea,
+select {
+  color: #000 !important;
+}

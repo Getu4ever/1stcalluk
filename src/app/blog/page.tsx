@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { sanityClient } from "../../../sanity/lib/sanityClient";
-import type { Metadata } from "next";
 import { urlFor } from "../../../sanity/lib/sanityImage";
 import BlogFade from "./BlogFade";
 
@@ -34,30 +33,23 @@ function formatDate(dateString: string) {
 }
 
 export default async function BlogPage() {
-  const posts = (await sanityClient.fetch(BLOG_QUERY)) as BlogPostCard[];
+  const posts = await sanityClient.fetch(BLOG_QUERY);
 
   return (
     <main className="min-h-screen bg-gray-50 py-16 px-6">
       <BlogFade>
-        {/* IMPORTANT: blog-fade kept here to preserve your animation logic */}
         <div className="max-w-6xl mx-auto blog-fade">
           <h1 className="text-4xl font-extrabold text-center text-[#2d459c] mb-4">
             Immigration News & Insights
           </h1>
 
           <p className="text-center text-gray-700 mb-10 max-w-3xl mx-auto leading-relaxed">
-            Practical articles and commentary on UK immigration and asylum law
+            Practical articles and commentary on UK immigration law
             from the team at 1st Call UK Immigration Services.
           </p>
 
-          {posts.length === 0 && (
-            <p className="text-center text-gray-600">
-              No articles have been published yet. Please check back soon.
-            </p>
-          )}
-
           <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
-            {posts.map((post) => (
+            {posts.map((post: BlogPostCard) => (
               <article
                 key={post._id}
                 className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col"

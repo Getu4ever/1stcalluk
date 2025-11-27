@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "UK Immigration News & Legal Insights | Visa & Appeal Guides | 1st Call UK Blog",
   description:
-    "Expert articles on UK visas, immigration rules, asylum decisions, legal updates, appeal strategies and Home Office guidance — written by specialist immigration advisers.",
+    "Expert articles on UK visas, immigration rules, asylum decisions, legal updates, appeal strategies and Home Office guidance — written by specialist immigration advisors.",
 };
 
 export default function BlogLayout({ children }: { children: React.ReactNode }) {

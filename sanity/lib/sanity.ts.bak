@@ -1,0 +1,51 @@
+// sanity/lib/sanity.ts
+import { createClient } from "next-sanity";
+
+export const client = createClient({
+  projectId: "gwozhq55",
+  dataset: "production",
+  apiVersion: "2023-10-10",
+  useCdn: false, // Ensure fresh data (needed for archive toggle)
+});
+
+
+/**
+ * Fetch all visible blog posts (NOT archived)
+ */
+export async function getVisibleBlogPosts() {
+  return client.fetch(`
+    *[_type == "blogPost" && archived != true] | order(publishedAt desc){
+      _id,
+      title,
+      slug,
+      excerpt,
+      mainImage,
+      publishedAt,
+      author->{name},
+      categories[]->{title},
+      body
+    }
+  `);
+}
+
+/**
+ * Fetch single blog post by slug (also ensure it's not archived)
+ */
+export async function getBlogPostBySlug(slug: string) {
+  return client.fetch(
+    `
+    *[_type == "blogPost" && slug.current == $slug && archived != true][0]{
+      _id,
+      title,
+      slug,
+      excerpt,
+      mainImage,
+      publishedAt,
+      author->{name},
+      categories[]->{title},
+      body
+    }
+    `,
+    { slug }
+  );
+}

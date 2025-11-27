@@ -77,7 +77,7 @@ export default function DocumentManagementPage() {
               </li>
               <li>
                 <strong>Data Protection Compliance</strong> – Fully compliant
-                with GDPR and OISC requirements.
+                with GDPR and IAA requirements.
               </li>
               <li>
                 <strong>Paper-to-Digital Conversion</strong> – We can scan and
@@ -104,7 +104,7 @@ export default function DocumentManagementPage() {
                   We also maintain detailed audit logs for all documents handled,
                   ensuring full transparency and absolute accuracy during case
                   preparation. Each file is time-stamped, categorised, and stored
-                  securely, allowing our advisers to keep your immigration matter
+                  securely, allowing our advisors to keep your immigration matter
                   progressing smoothly and efficiently.
                 </p>
               </div>

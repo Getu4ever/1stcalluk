@@ -8,7 +8,7 @@ export default function ServicesPage() {
       title: "Temporary or Permanent Residency Applications",
       image: "/residency.jpg",
       description:
-        "We assist clients in obtaining the right to live and work in the UK, whether on a temporary visa or a pathway to permanent residency. Our advisers ensure your application meets all Home Office requirements and is presented with clarity and precision.",
+        "We assist clients in obtaining the right to live and work in the UK, whether on a temporary visa or a pathway to permanent residency. Our advisors ensure your application meets all Home Office requirements and is presented with clarity and precision.",
     },
     {
       title: "Visa Extensions",
@@ -20,7 +20,7 @@ export default function ServicesPage() {
       title: "Family Reunion & Sponsorship",
       image: "/family-reunion.jpg",
       description:
-        "We understand the importance of being close to loved ones. Our advisers help reunite families by assisting with spousal, child, and dependent visa applications, ensuring your case is supported by strong evidence and legal compliance.",
+        "We understand the importance of being close to loved ones. Our advisors help reunite families by assisting with spousal, child, and dependent visa applications, ensuring your case is supported by strong evidence and legal compliance.",
     },
     {
       title: "Sponsoring Overseas Employees",
@@ -50,7 +50,7 @@ export default function ServicesPage() {
       title: "Referrals & Specialist Support",
       image: "/referrals.jpg",
       description:
-        "We welcome referrals from solicitors, advisers, and agencies across the UK who need specialist assistance in complex immigration or asylum cases. Partner with our experienced team for accurate, dependable legal guidance.",
+        "We welcome referrals from solicitors, advisors, and agencies across the UK who need specialist assistance in complex immigration cases. Partner with our experienced team for accurate, dependable legal guidance.",
     },
   ];
 
@@ -78,7 +78,7 @@ export default function ServicesPage() {
     <main className="min-h-screen bg-gray-50 py-16 px-6">
       <div className="max-w-7xl mx-auto">
         <h1 className="opacity-0 animate-fade-in text-4xl font-extrabold text-center text-[#2d459c] mb-4">
-          Our Professional Immigration Services
+          Our Services
         </h1>
 
         <p
@@ -119,7 +119,7 @@ export default function ServicesPage() {
         <div className="text-center mt-16">
           <p className="text-gray-700 mb-4">
             Ready to discuss your immigration needs? Schedule a meeting with one of our
-            experienced advisers and take the first step toward your immigration goals.
+            experienced advisors and take the first step toward your immigration goals.
           </p>
 
           <a

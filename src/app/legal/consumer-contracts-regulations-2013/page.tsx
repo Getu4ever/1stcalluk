@@ -1,4 +1,3 @@
-
 export const metadata = {
   title: "Consumer Contracts Regulations 2013 | 1st Call UK",
   description:
@@ -22,7 +21,7 @@ export default function ConsumerContractsPage() {
           {/* Download PDF */}
           <div className="mt-6">
             <a
-              href="/legal/consumer_contracts_regulations_2013.pdf"
+          href="/consumer_contracts_regulations_2013.pdf"
               download
               className="inline-block bg-white text-[#2d459c] font-semibold px-6 py-2 rounded-lg shadow hover:bg-gray-100 transition"
             >
@@ -107,6 +106,20 @@ export default function ConsumerContractsPage() {
             </h2>
             <p className="mt-3 leading-relaxed">
               These regulations may be updated or amended in accordance with applicable UK law.
+            </p>
+          </section>
+
+          {/* NEW SECTION — Opting Out */}
+          <section className="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-sm">
+            <h2 className="text-xl font-semibold text-[#2d459c] flex items-center gap-2">
+              <span>🚪</span> 8. Opting Out
+            </h2>
+            <p className="mt-3 leading-relaxed">
+              Consumers may choose to opt out of certain rights under the Regulations only where
+              permitted by law and where such an opt-out does not remove mandatory consumer
+              protections. Any opt-out must be expressly agreed by the consumer in writing and must
+              be based on clear, unambiguous information provided by the Firm. The Firm must not
+              pressure or mislead the consumer into waiving rights that cannot legally be waived.
             </p>
           </section>
 

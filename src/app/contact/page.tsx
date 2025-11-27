@@ -71,7 +71,7 @@ export default function ContactPage() {
 
           <p className="text-gray-700 mb-6 leading-relaxed">
             You can <strong>send us a message</strong> or <strong>book a call</strong> with our senior
-            immigration adviser <strong>James</strong>.
+            immigration advisor <strong>James</strong>.
             <br /><br />
             We reply to messages within <strong>two working days</strong>.
           </p>
@@ -160,7 +160,7 @@ export default function ContactPage() {
       
       <div className="max-w-6xl mx-auto mt-12 bg-white rounded-2xl shadow-md overflow-hidden h-[500px] contact-fade">
         <iframe
-          title="1st Call UK Immigration Advisers Location"
+          title="1st Call UK Immigration advisors Location"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2422.574523327401!2d-1.167503923231381!3d52.967709247002746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4879c3e184a6b4c5%3A0x6c0a6ffcb23654e2!2s25%20Noel%20St%2C%20Nottingham%20NG7%206AQ%2C%20UK!5e0!3m2!1sen!2suk!4v1698480000000!5m2!1sen!2suk"
           width="100%"
           height="100%"

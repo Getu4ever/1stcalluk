@@ -40,11 +40,11 @@ export default function HomePage() {
             <span className="text-[#2d459c] font-semibold">
               Nottingham’s Best Independent
             </span>{" "}
-            specialist in UK immigration and asylum law — trusted for clear, expert guidance since 2008.
+            specialist in UK immigration  law — trusted for clear, expert guidance since 2008.
           </p>
 
           <p>
-            For over fifteen years, our specialist team in Nottingham has focused exclusively on immigration and asylum law.
+            For over 18 years, our specialist team in Nottingham has focused exclusively on immigration  law.
             We do not divide our expertise across practice areas — our sole focus means we stay updated on ever-changing regulations
             to provide tailored, high-quality advice.
           </p>
@@ -109,8 +109,8 @@ export default function HomePage() {
               Accredited Experts
             </h4>
             <p>
-              Our advisers are IAA-regulated and uphold the highest professional
-              standards in immigration and asylum representation.
+              Our advisors are IAA-regulated and uphold the highest professional
+              standards in immigration  representation.
             </p>
           </div>
           <div className="p-6 bg-white rounded-2xl shadow-md hover:shadow-lg transition">
@@ -127,7 +127,7 @@ export default function HomePage() {
               Proven Track Record
             </h4>
             <p>
-              With over 15 years of success stories, we have helped hundreds of
+              With over 18 years of success stories, we have helped hundreds of
               clients secure visas, residence, and citizenship in the UK.
             </p>
           </div>

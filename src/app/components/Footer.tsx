@@ -43,7 +43,7 @@ export default function Footer() {
           <ul className="space-y-2 text-gray-200 text-sm">
             {[
               "Free initial conference",
-              "Skype conferences available",
+              "Teams conferences available",
               "Clients refer us to their friends and family",
               "Affordable, caring and quality service",
               "Family owned and run business",

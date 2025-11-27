@@ -123,11 +123,13 @@ export default function NewsPage() {
                   {post.title}
                 </h2>
                 <p className="text-gray-700 mb-6 flex-grow">{post.excerpt}</p>
+
+                {/* FIXED: reliable external navigation without breaking back button */}
                 <a
-                  href={post.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-auto bg-[#2d459c] text-white font-semibold py-2 px-5 rounded-md hover:bg-[#22347a] text-center transition-colors duration-300"
+                  onClick={() =>
+                    window.open(post.link, "_blank", "noopener,noreferrer")
+                  }
+                  className="mt-auto bg-[#2d459c] text-white font-semibold py-2 px-5 rounded-md hover:bg-[#22347a] text-center transition-colors duration-300 cursor-pointer"
                 >
                   Read More →
                 </a>
@@ -135,9 +137,22 @@ export default function NewsPage() {
             ))}
           </div>
 
+          {/* REQUIRED CREDIT LINE */}
+          <p className="text-center text-gray-500 text-sm mt-6">
+            Immigration news content is sourced from{" "}
+            <a
+              href="https://www.freemovement.org.uk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline text-[#2d459c]"
+            >
+              Free Movement
+            </a>
+            .
+          </p>
+
           {/* MEDIA COVERAGE SECTION */}
           <div className="mt-20">
-            {/* CLICKABLE HEADING THAT SCROLLS TO GALLERY */}
             <a href="#news-gallery">
               <h2 className="text-3xl font-bold text-[#2d459c] text-center mb-3 hover:underline cursor-pointer">
                 We’re on the News

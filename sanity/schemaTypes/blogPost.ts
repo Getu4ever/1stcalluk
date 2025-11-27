@@ -80,7 +80,6 @@ export default defineType({
             ],
           },
         },
-        // Allow inline images inside the post body
         {
           type: "image",
           fields: [
@@ -95,11 +94,7 @@ export default defineType({
       ],
     }),
 
-    //
-    // -------------------------
-    // SEO FIELDS
-    // -------------------------
-    //
+    // SEO
     defineField({
       name: "seoTitle",
       title: "SEO Title (optional)",

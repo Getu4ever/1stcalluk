@@ -53,8 +53,8 @@ export default function TeamPage() {
             </h2>
             <p className="text-gray-700 leading-relaxed">
               James founded 1st Call UK in 2008 after many years of experience in immigration and
-              asylum law. He has served as a Trustee and Director of a local non-profit organisation
-              that provides assistance to asylum seekers in Nottingham and Nottinghamshire.
+             law. He has served as a Trustee and Director of a local non-profit organisation
+              that provides assistance to immigration matters in Nottingham and Nottinghamshire.
               With over <strong>24 years of immigration experience</strong>, James has built a
               reputation for professionalism, dedication, and success.
             </p>
@@ -68,7 +68,7 @@ export default function TeamPage() {
             <div className="mt-6">
               <img
                 src="/james-ramowski-advising-asylum-seeker-1st-call-uk-immigration-services.png"
-                alt="Experienced immigration law advisers"
+                alt="Experienced immigration law advisors"
                 className="rounded-xl shadow-md w-full object-cover"
               />
             </div>
@@ -77,14 +77,13 @@ export default function TeamPage() {
           {/* ⭐ NEW SECTION: Biography of James Ramowski (Inserted Here) */}
           <section className="fade-section bg-[#f8f9ff] border border-[#dfe3ff] rounded-2xl p-6 md:p-8 shadow-sm">
             <h2 className="text-2xl font-semibold text-[#2d459c] mb-3">
-              About James - Our Senior Adviser
+              About James - Our Senior advisor
             </h2>
             <p className="text-gray-700 leading-relaxed">
-              <strong>James</strong> is the Founder and Principal Immigration Adviser at
+              <strong>James</strong> is the Founder and Principal Immigration advisor at
               1st Call UK Immigration Services. With more than two decades of legal experience,
               James has established himself as one of Nottingham’s most trusted immigration
-              specialists. His career began with voluntary work supporting vulnerable asylum
-              seekers, a role that shaped his compassionate and client-focused approach.
+              specialists, a role that has shaped his compassionate and client-focused approach.
             </p>
             <p className="text-gray-700 leading-relaxed mt-4">
               Throughout his career, James has worked closely with families, students, workers, and
@@ -107,7 +106,7 @@ export default function TeamPage() {
               A Personal Touch
             </h2>
             <p className="text-gray-700 leading-relaxed">
-              Beyond his professional life, James is a devoted husband and father. He is a former
+              Beyond his professional life, James is a devoted husband and father. He is currently a trustee of a local charity, <strong>CHAYAH DEVELOPMENT PROJECT</strong>. He is a former
               Chairman of the Hucknall Round Table — part of Round Table International — and a past
               committee member of the Wollaton Royal British Legion Club. Outside of work, he enjoys
               dining, socialising, cycling, and spending quality time with his family, reflecting
@@ -175,7 +174,7 @@ export default function TeamPage() {
               1st Call UK is authorised and regulated by the{" "}
               <strong>Immigration Advice Authority (IAA) - formerly known as the OISC</strong> at the
               highest level. This authorisation empowers us to advise and represent clients in all
-              areas of immigration and asylum — from initial applications to appeals before the
+              areas of immigration  — from initial applications to appeals before the
               Upper Tribunal of the Immigration & Asylum Chamber.
             </p>
             <p className="text-gray-700 leading-relaxed mt-4">

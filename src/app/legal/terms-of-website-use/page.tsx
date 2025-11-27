@@ -19,7 +19,7 @@ export default function TermsOfWebsiteUsePage() {
           {/* Download PDF */}
           <div className="mt-6">
             <a
-              href="/legal/terms_of_website_use.pdf"
+              href="/terms_of_website_use.pdf"
               download
               className="inline-block bg-white text-[#2d459c] font-semibold px-6 py-2 rounded-lg shadow hover:bg-gray-100 transition"
             >

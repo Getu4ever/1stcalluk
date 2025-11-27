@@ -19,7 +19,7 @@ export default function CookiePolicyPage() {
           {/* Download PDF */}
           <div className="mt-6">
             <a
-              href="/legal/cookie_policy.pdf"
+              href="/cookie_policy.pdf"
               download
               className="inline-block bg-white text-[#2d459c] font-semibold px-6 py-2 rounded-lg shadow hover:bg-gray-100 transition"
             >

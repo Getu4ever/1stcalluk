@@ -45,8 +45,8 @@ export default function ReviewsPage() {
             </h1>
             <p className="text-gray-700 max-w-3xl mx-auto leading-relaxed mb-4">
               At <strong>1st Call UK Immigration Services</strong>, we’re proud
-              of the trust our clients place in us. With over{" "}
-              <strong>300 a year successful visa applications</strong> and a reputation
+              of the trust our clients place in us. James does not take on cases he believes cannot succeed, prioritising results over financial gain. With over{" "}
+              <strong>thousands of successful applications and appeals over the years</strong> and a reputation
               for care and professionalism, our team is dedicated to achieving
               the best results for every individual and family we serve.
             </p>
@@ -84,7 +84,7 @@ export default function ReviewsPage() {
             </h1>
             <p className="text-gray-700 max-w-3xl mx-auto leading-relaxed">
               Our clients’ satisfaction is the greatest measure of our success.
-              For over fifteen years, we have helped individuals and families
+              For over eighteen years, we have helped individuals and families
               overcome the complexities of immigration law with honesty,
               dedication, and care. Here’s what some of our clients have shared
               about their experience with <strong>1st Call UK</strong>.
@@ -115,7 +115,7 @@ export default function ReviewsPage() {
  
               <p className="text-gray-700 italic mb-4">
                 “Professional, honest, and extremely knowledgeable. 1st Call UK
-                helped me secure my visa after another adviser had given up. I
+                helped me secure my visa after another advisor had given up. I
                 am forever grateful for their persistence and expertise.”
               </p>
               <p className="font-semibold text-[#2d459c]">— Ahmed K.</p>
@@ -130,11 +130,11 @@ export default function ReviewsPage() {
 
               <p className="text-gray-700 italic mb-4">
                 “James and his team provided an excellent service when handling
-                my asylum case. Their professionalism and empathy truly made a
+                my immigration case. Their professionalism and empathy truly made a
                 difference. Thank you for all your support.”
               </p>
               <p className="font-semibold text-[#2d459c]">— Marina L.</p>
-              <p className="text-sm text-gray-500">Asylum Client</p>
+              <p className="text-sm text-gray-500">Immigration Client</p>
             </div>
 
             {/* Review 4 */}

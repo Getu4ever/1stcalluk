@@ -19,7 +19,7 @@ export default function GDPRDataPrivacyPage() {
           {/* Download PDF */}
           <div className="mt-6">
             <a
-              href="/legal/gdpr_data_privacy_notice.pdf"
+              href="/gdpr_data_privacy_notice.pdf"
               download
               className="inline-block bg-white text-[#2d459c] font-semibold px-6 py-2 rounded-lg shadow hover:bg-gray-100 transition"
             >

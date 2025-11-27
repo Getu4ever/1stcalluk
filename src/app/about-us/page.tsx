@@ -32,7 +32,7 @@ export default function AboutPage() {
         <div className="w-full h-64 md:h-80 overflow-hidden fade-block opacity-0">
           <img
             src="/about-1st-call-hero-03.png"
-            alt="1st Call UK Immigration Advisers"
+            alt="1st Call UK Immigration advisors"
             className="w-full h-full object-cover"
           />
         </div>
@@ -47,8 +47,8 @@ export default function AboutPage() {
           <div className="text-gray-700 space-y-5 leading-relaxed">
 
             <p className="fade-block opacity-0">
-              For over fifteen years, <strong>1st Call UK</strong> has been a dedicated immigration
-              consultancy based in Nottingham, specialising exclusively in immigration and asylum
+              For over 18 years, <strong>1st Call UK</strong> has been a dedicated immigration
+              consultancy based in Nottingham, specialising exclusively in immigration
               matters. Unlike general law firms, we focus entirely on immigration law—giving us the
               time and expertise to keep pace with frequent regulatory changes and deliver
               high-quality, tailored advice.
@@ -76,10 +76,10 @@ export default function AboutPage() {
             {/* Family-Owned Highlight Section */}
             <div className="bg-[#f6f7fb] border border-[#2d459c]/20 rounded-xl p-6 md:p-8 mt-10 shadow-sm fade-block opacity-0">
               <h2 className="text-2xl font-semibold text-[#2d459c] mb-4 text-center">
-                A Family-Owned and Operated Immigration Service
+                A Family-Owned and Operated Business
               </h2>
               <p className="text-gray-700 leading-relaxed text-center">
-                1st Call UK Immigration Services is proudly a <strong>family-owned and family-operated</strong> consultancy,
+                1st Call UK Immigration Services is proudly a <strong>family-owned and family-operated</strong> business,
                 built on values of trust, integrity, and personal dedication. Our clients are never
                 treated as case numbers — they are welcomed with the same respect, commitment, and care
                 we show to our own family. This foundation allows us to offer a warm, supportive, and
@@ -132,8 +132,7 @@ export default function AboutPage() {
               </li>
               <li>
                 <strong>International Reach</strong> – Our clients come from many countries and
-                backgrounds; recommendations extend from Nottingham to Afghanistan, Ukraine, Russia,
-                and the UAE.
+                backgrounds; recommendations extend from Scotland to Plymouth, Africa, the Caribbean and beyond
               </li>
               <li>
                 <strong>Clear Costs</strong> – Transparent advice, fair fees, and no hidden
@@ -146,7 +145,7 @@ export default function AboutPage() {
             </ul>
 
             <p className="fade-block opacity-0">
-              When you work with us, you’ll have a dedicated adviser by your side who will guide you
+              When you work with us, you’ll have a dedicated advisor by your side who will guide you
               through every step of your application or appeal. Your success is our mission, and
               your peace of mind is our priority.
             </p>
