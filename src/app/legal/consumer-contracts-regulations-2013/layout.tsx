@@ -4,12 +4,10 @@ export const metadata: Metadata = {
   title: "Consumer Contracts Regulations 2013 | Your Rights Explained",
   description:
     "Clear guidance on your rights under the Consumer Contracts Regulations 2013, including cancellations, refunds and protections for online and distance sales.",
-
   alternates: {
     canonical:
       "https://www.1stcallukimmigration.co.uk/legal/consumer-contracts-regulations-2013",
   },
-
   openGraph: {
     title: "Consumer Contracts Regulations 2013 | Your Rights Explained",
     description:
@@ -20,8 +18,8 @@ export const metadata: Metadata = {
   },
 };
 
-// ⭐ REQUIRED — fixes the Next.js layout error
-export default function LegalLayout({
+// ✅ REQUIRED NEXT.JS LAYOUT WRAPPER
+export default function LegalPageLayout({
   children,
 }: {
   children: React.ReactNode;

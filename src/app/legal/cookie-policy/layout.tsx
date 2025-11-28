@@ -19,4 +19,13 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "1st Call UK Immigration Services",
   },
+  
 };
+// ✅ REQUIRED NEXT.JS LAYOUT WRAPPER
+export default function LegalPageLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return <>{children}</>;
+}
