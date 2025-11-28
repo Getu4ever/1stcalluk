@@ -73,7 +73,7 @@ export default function ContactPage() {
             You can <strong>send us a message</strong> or <strong>book a call</strong> with our senior
             immigration advisor <strong>James</strong>.
             <br /><br />
-            We reply to messages within <strong>two working days</strong>.
+            We usually reply to messages within <strong>two working days</strong>.
           </p>
 
           <form onSubmit={handleSubmit} className="space-y-4">

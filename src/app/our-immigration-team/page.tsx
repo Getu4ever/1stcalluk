@@ -106,8 +106,14 @@ export default function TeamPage() {
               A Personal Touch
             </h2>
             <p className="text-gray-700 leading-relaxed">
-              Beyond his professional life, James is a devoted husband and father. He is currently a trustee of a local charity, <strong>CHAYAH DEVELOPMENT PROJECT</strong>. He is a former
-              Chairman of the Hucknall Round Table — part of Round Table International — and a past
+              Beyond his professional life, James is a devoted husband and father. He is currently a trustee of a local charity, <a
+  href="https://www.chayahgroup.co.uk/"
+  style={{ color: "#2d459c", fontWeight: "bold" }}
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  CHAYAH DEVELOPMENT PROJECT
+</a>. He is a former Chairman of the Hucknall Round Table — part of Round Table International — and a past
               committee member of the Wollaton Royal British Legion Club. Outside of work, he enjoys
               dining, socialising, cycling, and spending quality time with his family, reflecting
               the same empathy and integrity he brings to his clients’ cases.

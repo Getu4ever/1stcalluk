@@ -45,7 +45,7 @@ export default function ReviewsPage() {
             </h1>
             <p className="text-gray-700 max-w-3xl mx-auto leading-relaxed mb-4">
               At <strong>1st Call UK Immigration Services</strong>, we’re proud
-              of the trust our clients place in us. James does not take on cases he believes cannot succeed, prioritising results over financial gain. With over{" "}
+              of the trust our clients place in us. James does not take on cases he believes cannot succeed, prioritising results over financial gain. With {" "}
               <strong>thousands of successful applications and appeals over the years</strong> and a reputation
               for care and professionalism, our team is dedicated to achieving
               the best results for every individual and family we serve.
@@ -79,9 +79,9 @@ export default function ReviewsPage() {
 
           {/* === Client Testimonials === */}
           <section className="fade-section text-center opacity-0 mt-20">
-            <h1 className="text-3xl font-bold text-[#2d459c] mb-6">
+            <h2 className="text-3xl font-bold text-[#2d459c] mb-6">
               Client Testimonials
-            </h1>
+            </h2>
             <p className="text-gray-700 max-w-3xl mx-auto leading-relaxed">
               Our clients’ satisfaction is the greatest measure of our success.
               For over eighteen years, we have helped individuals and families
