@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Secure Document Management for Immigration Cases | 1st Call UK",
-  description:
-    "Trusted document management for UK immigration cases. Secure storage, fast retrieval, GDPR-compliant digital archiving and full case transparency for visa and appeal applications.",
+title: "Secure Immigration Document Management | 1st Call UK",
+description:
+  "A secure digital document management system for immigration cases. Fast access, safe storage and GDPR-compliant handling for all case documents."
 };
 
 export default function DmsLayout({ children }: { children: React.ReactNode }) {

@@ -1,31 +1,56 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "UK Immigration News & Legal Insights | Visa & Appeal Guides | 1st Call UK Blog",
+  title: "UK Immigration News & Insights | 1st Call UK",
   description:
-    "Expert articles on UK visas, immigration rules, asylum decisions, legal updates, appeal strategies and Home Office guidance — written by specialist immigration advisors.",
+    "Expert articles on UK immigration law, visas, appeals, sponsorship and Home Office updates written by experienced immigration advisers.",
+
+  // Canonical URL
+  alternates: {
+    canonical: "https://www.1stcallukimmigration.co.uk/blog",
+  },
+
+  // OpenGraph metadata
+openGraph: {
+  title: "UK Immigration News & Insights | 1st Call UK",
+  description:
+    "Expert articles on UK immigration law, visas, appeals, sponsorship and Home Office updates written by experienced immigration advisers.",
+  url: "https://www.1stcallukimmigration.co.uk/blog",
+  type: "article",
+  siteName: "1st Call UK Immigration Services",
+},
+
 };
 
-export default function BlogLayout({ children }: { children: React.ReactNode }) {
-  return <>{children}</>;
-}
+export default function BlogLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <>
+      {children}
 
-{/* ==== BLOG LISTING SCHEMA (BlogPosting) ==== */}
-<script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Blog",
-      "name": "1st Call UK Immigration Blog",
-      "url": "https://1stcalluk.com/blog",
-      "description":
-        "Latest UK immigration news, legal updates, visa guidance and appeal strategies.",
-      "publisher": {
-        "@type": "Organization",
-        "name": "1st Call UK Immigration Services",
-        "logo": "https://1stcalluk.com/1st-calluk-logo02.jpg"
-      }
-    }),
-  }}
-/>
+      {/* ==== BLOG LISTING SCHEMA ==== */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Blog",
+            "name": "1st Call UK Immigration Blog",
+            "url": "https://www.1stcallukimmigration.co.uk/blog",
+            "description":
+              "Latest UK immigration news, legal updates, visa guidance and appeal strategies.",
+            "publisher": {
+              "@type": "Organization",
+              "name": "1st Call UK Immigration Services",
+              "logo":
+                "https://www.1stcallukimmigration.co.uk/1st-calluk-logo02.jpg",
+            },
+          }),
+        }}
+      />
+    </>
+  );
+}

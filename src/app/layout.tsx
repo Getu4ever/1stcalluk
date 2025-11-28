@@ -7,6 +7,42 @@ import Footer from "./components/Footer";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 
+// ⭐ Add this at the very top of /app/layout.tsx (ABOVE RootLayout)
+
+export const metadata = {
+  metadataBase: new URL("https://www.1stcallukimmigration.co.uk"),
+
+  title: {
+    default: "1st Call UK Immigration Services",
+    template: "%s | 1st Call UK",
+  },
+
+  description:
+    "Trusted UK immigration advisers in Nottingham offering expert support with visas, appeals, family and work routes.",
+
+  robots: "index, follow",
+
+  openGraph: {
+    type: "website",
+    siteName: "1st Call UK Immigration Services",
+    url: "https://www.1stcallukimmigration.co.uk",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+  },
+
+  alternates: {
+    canonical: "https://www.1stcallukimmigration.co.uk",
+  },
+
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+  },
+};
+
+
 export default function RootLayout({
   children,
 }: {

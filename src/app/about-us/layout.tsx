@@ -1,11 +1,29 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Us | Trusted Immigration Lawyers & advisors in Nottingham | 1st Call UK",
+  title: "About Us | 1st Call UK Immigration Services",
   description:
-    "For over 15 years, 1st Call UK has helped families, workers and businesses navigate UK immigration law. Specialists in visas, appeals  cases. Learn more about our expert team.",
+    "Learn about 1st Call UK Immigration Services, our expertise, and our commitment to helping individuals, families and businesses with UK visa and appeal matters.",
+
+  // Canonical URL for SEO
+  alternates: {
+    canonical: "https://www.1stcallukimmigration.co.uk/about-us",
+  },
+
+  // OpenGraph metadata for richer previews
+  openGraph: {
+    title: "About Us | 1st Call UK Immigration Services",
+    description:
+      "Learn about 1st Call UK Immigration Services and our commitment to UK visa and appeal support for individuals, families and businesses.",
+    url: "https://www.1stcallukimmigration.co.uk/about-us",
+    type: "article",
+  },
 };
 
-export default function AboutLayout({ children }: { children: React.ReactNode }) {
+export default function AboutLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return <>{children}</>;
 }

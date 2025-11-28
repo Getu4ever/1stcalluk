@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Best Immigration Lawyer in Nottingham | UK Visa & Appeal Specialists | 1st Call UK",
-  description:
-    "Leading UK immigration lawyers in Nottingham. Visa applications, spouse visas, appeals, asylum claims, work visas, sponsor licences & more. Over 300+ 5-star reviews. Book a free consultation today.",
+title: "UK Immigration Advisers in Nottingham | 1st Call UK",
+description:
+  "Trusted UK immigration advisers in Nottingham. We assist with visas, appeals, family applications, work routes and sponsor licences. 300+ five-star reviews."
 };
 
 export default function HomePage() {
