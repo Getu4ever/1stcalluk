@@ -9,14 +9,15 @@ export default defineConfig({
   projectId: "gwozhq55",
   dataset: "production",
 
-  // Desk tool with default behaviour
-  plugins: [deskTool()],
+  plugins: [
+    deskTool(),
+  ],
 
   schema: {
     types: schemaTypes,
   },
 
-  // (Optional) keep default document actions (includes Delete, Duplicate, etc.)
+  // Keep default document actions
   document: {
     actions: (prev) => prev,
   },

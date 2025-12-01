@@ -64,7 +64,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "logo": "https://1stcalluk.com/1st-calluk-logo02.jpg",
               "image": "https://1stcalluk.com/immigration-law-team.png",
               "telephone": "+441158453325",
-              "email": "info@karoldigital.co.uk",
+              "email": "info@1stcalluk.com",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "25 St James's St",
@@ -150,6 +150,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             })();`,
           }}
         />
+
       </body>
     </html>
   );

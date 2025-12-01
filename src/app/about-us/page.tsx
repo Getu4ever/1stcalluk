@@ -29,11 +29,14 @@ export default function AboutPage() {
       <div className="max-w-5xl w-full bg-white rounded-2xl shadow-lg overflow-hidden">
 
         {/* Hero Image */}
-        <div className="w-full h-64 md:h-80 overflow-hidden fade-block opacity-0">
-          <img
+        <div className="w-full h-64 md:h-80 overflow-hidden fade-block opacity-0 relative">
+          <Image
             src="/about-1st-call-hero-03.png"
             alt="1st Call UK Immigration advisors"
-            className="w-full h-full object-cover"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover"
           />
         </div>
 
@@ -106,11 +109,13 @@ export default function AboutPage() {
                 style={{ display: "inline-block", border: 0 }}
                 rel="noopener noreferrer"
               >
-                <img
-                  style={{ width: "350px", display: "block" }}
-                  width="350"
+                <Image
                   src="https://threebestrated.co.uk/awards/immigration_consultants-nottingham-2025-drk.svg"
                   alt="Best Immigration consultants in Nottingham"
+                  width={350}
+                  height={350}
+                  sizes="350px"
+                  style={{ width: "350px", display: "block" }}
                 />
               </a>
             </div>

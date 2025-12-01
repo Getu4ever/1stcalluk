@@ -1,7 +1,9 @@
+import Image from "next/image";
+
 export const metadata = {
-title: "UK Immigration Advisers in Nottingham | 1st Call UK",
-description:
-  "Trusted UK immigration advisers in Nottingham. We assist with visas, appeals, family applications, work routes and sponsor licences. 300+ five-star reviews."
+  title: "UK Immigration Advisers in Nottingham | 1st Call UK",
+  description:
+    "Trusted UK immigration advisers in Nottingham. We assist with visas, appeals, family applications, work routes and sponsor licences. 300+ five-star reviews."
 };
 
 export default function HomePage() {
@@ -9,10 +11,13 @@ export default function HomePage() {
     <main className="min-h-screen bg-gray-50">
       {/* ===== Hero Section ===== */}
       <header className="relative h-36 sm:h-[50vh] md:h-[55vh] overflow-hidden mb-8">
-        <img
+        <Image
           src="/immigration-law-team.png"
-          alt="Immigration consultation UK"
-          className="w-full h-full object-cover"
+          alt="UK immigration law team"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
         />
 
         {/* Overlay for text */}
@@ -40,11 +45,11 @@ export default function HomePage() {
             <span className="text-[#2d459c] font-semibold">
               Nottingham’s Best Independent
             </span>{" "}
-            specialist in UK immigration  law — trusted for clear, expert guidance since 2008.
+            specialist in UK immigration law — trusted for clear, expert guidance since 2008.
           </p>
 
           <p>
-            For over 18 years, our specialist team in Nottingham has focused exclusively on immigration  law.
+            For over 18 years, our specialist team in Nottingham has focused exclusively on immigration law.
             We do not divide our expertise across practice areas — our sole focus means we stay updated on ever-changing regulations
             to provide tailored, high-quality advice.
           </p>
@@ -56,7 +61,7 @@ export default function HomePage() {
             Our approach combines personal care with rigorous professionalism.
             We believe in clear communication: you will receive precise guidance along with explanations that help you understand your options.
           </p>
-          {/* ===== Added Link to Team Page (ONLY NEW ADDITION) ===== */}
+
           <div className="pt-2">
             <a
               href="/our-immigration-team"
@@ -66,7 +71,7 @@ export default function HomePage() {
             </a>
           </div>
 
-          {/* ⭐ Award Badge Inserted Here */}
+          {/* ⭐ Award Badge */}
           <div className="mt-6">
             <a
               href="https://threebestrated.co.uk/immigration-consultants-in-nottingham"
@@ -74,10 +79,14 @@ export default function HomePage() {
               rel="noopener noreferrer"
               className="block text-center"
             >
-              <img
+              <Image
                 src="https://threebestrated.co.uk/awards/immigration_consultants-nottingham-2025-drk.svg"
-                alt="Best Immigration consultants in Nottingham"
-                className="w-48 mx-auto md:w-56 hover:scale-105 transition-transform duration-300"
+                alt="Best immigration consultants award badge"
+                width={220}
+                height={220}
+                className="mx-auto md:w-56 hover:scale-105 transition-transform duration-300"
+                priority
+                sizes="220px"
               />
               <p className="mt-2 text-sm text-gray-600 font-medium">
                 Proudly awarded every year since 2016
@@ -86,16 +95,19 @@ export default function HomePage() {
           </div>
         </div>
 
-                {/* Right column - Immigration-themed image */}
-<div className="relative rounded-2xl overflow-hidden shadow-xl w-full max-w-md md:self-start mt-20">
-  <img
-    src="/1st-call-uk-immigration-services.png"
-    alt="1st Call UK immigration services"
-    className="w-full h-full object-cover"
-  />
-  <div className="absolute inset-0 bg-gradient-to-b from-[#2d459c]/30 via-[#2d459c]/50 to-[#2d459c]/70"></div>
-</div>
-
+        {/* Right column - Immigration-themed image */}
+        <div className="relative rounded-2xl overflow-hidden shadow-xl w-full max-w-md md:self-start mt-20">
+          <Image
+            src="/1st-call-uk-immigration-services.png"
+            alt="1st Call UK office and immigration services branding"
+            width={800}
+            height={600}
+            className="w-full h-full object-cover"
+            sizes="(max-width: 768px) 100vw, 400px"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#2d459c]/30 via-[#2d459c]/50 to-[#2d459c]/70"></div>
+        </div>
       </section>
 
       {/* ===== Why Choose Us Section ===== */}
@@ -110,7 +122,7 @@ export default function HomePage() {
             </h4>
             <p>
               Our advisors are IAA-regulated and uphold the highest professional
-              standards in immigration  representation.
+              standards in immigration representation.
             </p>
           </div>
           <div className="p-6 bg-white rounded-2xl shadow-md hover:shadow-lg transition">
@@ -133,7 +145,6 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Call-to-Action */}
         <div className="mt-12 text-center">
           <a
             href="/contact"

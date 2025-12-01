@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="bg-[#2d459c] text-white py-14 px-6 md:px-10">
@@ -10,11 +11,14 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src="/IAA-logo.jpg"
-              alt="IAA Immigration Advice Authority logo"
-              className="w-28 h-auto rounded-md shadow-md hover:scale-105 transition-transform duration-300"
-            />
+            <Image
+            src="/IAA-logo.jpg"
+            alt="IAA Immigration Advice Authority logo"
+            width={200}
+            height={200}
+            className="w-28 h-auto rounded-md shadow-md hover:scale-105 transition-transform duration-300"
+            priority={false}
+          />
           </a>
 
           <h3 className="text-xl font-bold">We Can Help</h3>

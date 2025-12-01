@@ -1,4 +1,5 @@
 "use client";
+
 import { useEffect } from "react";
 import Image from "next/image";
 
@@ -76,6 +77,7 @@ export default function NewsPage() {
   return (
     <main className="min-h-screen bg-gray-50 py-16 px-6 scroll-smooth">
       <div className="max-w-6xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
+
         {/* HERO SECTION */}
         <div className="relative w-full h-64 md:h-80 overflow-hidden">
           <Image
@@ -93,6 +95,7 @@ export default function NewsPage() {
           <h1 className="text-3xl font-bold text-[#2d459c] text-center">
             News & Legal Updates
           </h1>
+
           <p className="text-gray-700 text-center max-w-3xl mx-auto leading-relaxed">
             Stay informed with the latest developments in UK immigration law,
             judicial reviews, and policy changes. Our team continually follows
@@ -107,29 +110,33 @@ export default function NewsPage() {
                 key={i}
                 className="news-item bg-[#f9f9fb] rounded-2xl shadow-md hover:shadow-xl transition p-6 flex flex-col"
               >
-                <div className="w-full h-48 overflow-hidden rounded-lg mb-4">
-                  <img
+                {/* Optimised News Card Image */}
+                <div className="relative w-full h-48 overflow-hidden rounded-lg mb-4">
+                  <Image
                     src={post.image}
                     alt={post.title}
-                    className="w-full h-full object-cover transform hover:scale-105 transition duration-500"
-                    loading="lazy"
+                    fill
+                    sizes="(max-width: 768px) 100vw,
+                           (max-width: 1200px) 50vw,
+                           33vw"
+                    className="object-cover transform hover:scale-105 transition duration-500"
                   />
                 </div>
-                <span className="text-sm text-gray-500 mb-1">
-                  {post.category}
-                </span>
+
+                <span className="text-sm text-gray-500 mb-1">{post.category}</span>
                 <span className="text-xs text-gray-400 mb-2">{post.date}</span>
+
                 <h2 className="text-xl font-semibold text-[#2d459c] mb-3">
                   {post.title}
                 </h2>
+
                 <p className="text-gray-700 mb-6 flex-grow">{post.excerpt}</p>
 
-                {/* FIXED: reliable external navigation without breaking back button */}
                 <a
                   onClick={() =>
                     window.open(post.link, "_blank", "noopener,noreferrer")
                   }
-                  className="mt-auto bg-[#2d459c] text-white font-semibold py-2 px-5 rounded-md hover:bg-[#22347a] text-center transition-colors duration-300 cursor-pointer"
+                  className="mt-auto bg-[#2d459c] cursor-pointer text-white font-semibold py-2 px-5 rounded-md hover:bg-[#22347a] text-center transition-colors duration-300"
                 >
                   Read More →
                 </a>
