@@ -148,7 +148,7 @@ export default function NewsPage() {
           <p className="text-center text-gray-500 text-sm mt-6">
             Immigration news content is sourced from{" "}
             <a
-              href="https://www.freemovement.org.uk"
+              href="https://freemovement.org.uk/all-posts/"
               target="_blank"
               rel="noopener noreferrer"
               className="underline text-[#2d459c]"
