@@ -1,23 +1,17 @@
 "use client";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function BlogFade({ children }: { children: React.ReactNode }) {
-  useEffect(() => {
-    const sections = document.querySelectorAll(".blog-fade");
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animate-fade-in");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.15 }
-    );
+  const [visible, setVisible] = useState(false);
 
-    sections.forEach((section) => observer.observe(section));
+  useEffect(() => {
+    // Force visibility immediately after hydration
+    setVisible(true);
   }, []);
 
-  return <>{children}</>;
+  return (
+    <div className={visible ? "animate-fade-in" : "opacity-0"}>
+      {children}
+    </div>
+  );
 }

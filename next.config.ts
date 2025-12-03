@@ -9,10 +9,19 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "threebestrated.co.uk",
+        pathname: "/**",
       },
       {
         protocol: "https",
         hostname: "cdn.sanity.io",
+        pathname: "/**",
+      },
+
+      // ✅ FIXED: Free Movement RSS images
+      {
+        protocol: "https",
+        hostname: "freemovement.org.uk",
+        pathname: "/**",
       },
     ],
   },
@@ -22,7 +31,6 @@ const nextConfig = {
       {
         source: "/(.*)",
         headers: [
-          // Modern browsers use only CSP for iframe permissions
           {
             key: "Content-Security-Policy",
             value:

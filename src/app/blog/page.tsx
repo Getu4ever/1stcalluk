@@ -38,7 +38,7 @@ export default async function BlogPage() {
   return (
     <main className="min-h-screen bg-gray-50 py-16 px-6">
       <BlogFade>
-        <div className="max-w-6xl mx-auto blog-fade">
+  <div className="max-w-6xl mx-auto animate-fade-in">
           <h1 className="text-4xl font-extrabold text-center text-[#2d459c] mb-4">
             Immigration News & Insights
           </h1>
