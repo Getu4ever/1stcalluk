@@ -54,16 +54,17 @@ export default function ContactPage() {
   return (
     <main className="min-h-screen bg-gray-50 py-16 px-6">
 
-      {/* Calendly script (DO NOT REMOVE) */}
+      {/* ✅ Calendly Inline Widget Script */}
       <Script
         src="https://assets.calendly.com/assets/external/widget.js"
         strategy="afterInteractive"
+        async
       />
 
       {/* === TOP SECTION: FORM + BOOKING === */}
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 contact-fade">
 
-        {/* LEFT — Contact Form */}
+        {/* ✅ LEFT — CONTACT FORM (UNTOUCHED) */}
         <div className="bg-white rounded-2xl shadow-md p-8">
           <h1 className="text-3xl font-bold text-[#2d459c] mb-4 text-center">
             Contact Us
@@ -132,32 +133,26 @@ export default function ContactPage() {
               </p>
             )}
             {status === "error" && (
-              <p className="text-red-600 text-center mt-3">
-              </p>
+              <p className="text-red-600 text-center mt-3"></p>
             )}
           </form>
         </div>
 
-        {/* RIGHT — Calendly Booking Widget */}
-<div className="bg-white rounded-2xl shadow-md p-6">
-  <h2 className="text-2xl font-bold text-[#2d459c] mb-4 text-center">
- Book a Call (30 Minutes)  </h2>
-  <iframe
-    src="https://calendly.com/james-ramowski/30min?hide_event_type_details=1&background_color=ffffff&text_color=2d459c&primary_color=2d459c"
-    className="rounded-lg border border-gray-200 shadow-sm w-full"
-    style={{
-      height: "580px",   // You can adjust this height freely
-      minWidth: "100%"
-    }}
-    frameBorder="0"
-    scrolling="yes"
-  ></iframe>
-</div>
+        {/* ✅ RIGHT — CALENDLY INLINE WIDGET (HEIGHT REDUCED) */}
+        <div className="bg-white rounded-2xl shadow-md p-6">
+          <h2 className="text-2xl font-bold text-[#2d459c] mb-4 text-center">
+            Book a Call (30 Minutes)
+          </h2>
 
+          <div
+            className="calendly-inline-widget"
+            data-url="https://calendly.com/james-ramowski/30min?hide_event_type_details=1&hide_gdpr_banner=1"
+            style={{ minWidth: "320px", height: "520px" }}
+          ></div>
         </div>
+      </div>
 
       {/* === MAP (Full Width Below) === */}
-      
       <div className="max-w-6xl mx-auto mt-12 bg-white rounded-2xl shadow-md overflow-hidden h-[500px] contact-fade">
         <iframe
           title="1st Call UK Immigration advisors Location"
