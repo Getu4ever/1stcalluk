@@ -3,7 +3,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 
 export const metadata = {
-  metadataBase: new URL("https://www.1stcallukimmigration.co.uk"),
+  metadataBase: new URL("https://1stcalluk.com"),
 
   title: {
     default: "1st Call UK Immigration Services",
@@ -18,15 +18,27 @@ export const metadata = {
   openGraph: {
     type: "website",
     siteName: "1st Call UK Immigration Services",
-    url: "https://www.1stcallukimmigration.co.uk",
+    url: "https://1stcalluk.com",
+    images: [
+      {
+        url: "https://1stcalluk.com/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "1st Call UK Immigration Services",
+      },
+    ],
   },
 
   twitter: {
     card: "summary_large_image",
+    title: "1st Call UK Immigration Services",
+    description:
+      "Trusted UK immigration advisers in Nottingham offering expert support with visas, appeals, family and work routes.",
+    images: ["https://1stcalluk.com/og-image.jpg"],
   },
 
   alternates: {
-    canonical: "https://www.1stcallukimmigration.co.uk",
+    canonical: "https://1stcalluk.com",
   },
 
   icons: {
@@ -40,14 +52,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className="min-h-screen overflow-x-hidden bg-white text-gray-900">
 
-        {/* HEADER — Now a client component */}
         <Header />
-
-        {/* PAGE CONTENT */}
         <main>{children}</main>
-
-        {/* FOOTER */}
         <Footer />
+
         <div className="bg-black text-gray-400 text-center py-4 text-sm border-t border-gray-800">
           © {new Date().getFullYear()} 1st Call UK Immigration Services. All rights reserved.
         </div>
@@ -59,24 +67,24 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LegalService",
-              "name": "1st Call UK Immigration Services",
-              "url": "https://1stcalluk.com",
-              "logo": "https://1stcalluk.com/1st-calluk-logo02.jpg",
-              "image": "https://1stcalluk.com/immigration-law-team.png",
-              "telephone": "+441158453325",
-              "email": "info@1stcalluk.com",
-              "address": {
+              name: "1st Call UK Immigration Services",
+              url: "https://1stcalluk.com",
+              logo: "https://1stcalluk.com/1st-calluk-logo02.jpg",
+              image: "https://1stcalluk.com/immigration-law-team.png",
+              telephone: "+441158453325",
+              email: "info@1stcalluk.com",
+              address: {
                 "@type": "PostalAddress",
-                "streetAddress": "25 St James's St",
-                "addressLocality": "Nottingham",
-                "addressRegion": "Nottinghamshire",
-                "postalCode": "NG1 6FH",
-                "addressCountry": "GB",
+                streetAddress: "25 St James's St",
+                addressLocality: "Nottingham",
+                addressRegion: "Nottinghamshire",
+                postalCode: "NG1 6FH",
+                addressCountry: "GB",
               },
-              "priceRange": "££",
-              "description":
+              priceRange: "££",
+              description:
                 "Specialist UK immigration lawyers based in Nottingham offering expert advice on visas, appeals, asylum, family visas, sponsor licences and judicial reviews.",
-              "sameAs": [
+              sameAs: [
                 "https://facebook.com",
                 "https://linkedin.com",
                 "https://www.google.com/maps",
@@ -85,20 +93,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }}
         />
 
-        {/* ===== WEBSITE SCHEMA ===== */}
+        {/* ===== WEBSITE SCHEMA (FIXED — NO INVALID SEARCH TARGET) ===== */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              "name": "1st Call UK Immigration Services",
-              "url": "https://1stcalluk.com",
-              "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://1stcalluk.com/?s={search_term_string}",
-                "query-input": "required name=search_term_string",
-              },
+              name: "1st Call UK Immigration Services",
+              url: "https://1stcalluk.com",
             }),
           }}
         />
@@ -110,12 +113,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "BreadcrumbList",
-              "itemListElement": [
+              itemListElement: [
                 {
                   "@type": "ListItem",
-                  "position": 1,
-                  "name": "Home",
-                  "item": "https://1stcalluk.com",
+                  position: 1,
+                  name: "Home",
+                  item: "https://1stcalluk.com",
                 },
               ],
             }),

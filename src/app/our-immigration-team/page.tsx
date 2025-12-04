@@ -1,7 +1,5 @@
 "use client";
-
 import { useEffect } from "react";
-import Image from "next/image";
 
 export default function TeamPage() {
   useEffect(() => {
@@ -23,22 +21,17 @@ export default function TeamPage() {
   return (
     <main className="min-h-screen bg-gray-50 py-16 px-6">
       <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
-
         {/* Hero Image */}
-        <div className="w-full h-64 md:h-80 overflow-hidden relative">
-          <Image
+        <div className="w-full h-64 md:h-80 overflow-hidden">
+          <img
             src="/team-hero-final.png"
             alt="Our Immigration Team"
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover animate-fade-in"
+              className="w-full h-full object-cover animate-fade-in"
           />
         </div>
 
         {/* Content Section */}
         <div className="p-8 md:p-12 space-y-10">
-
           {/* Our People */}
           <section className="fade-section">
             <h1 className="text-3xl font-bold text-[#2d459c] mb-4 text-center">
@@ -60,7 +53,7 @@ export default function TeamPage() {
             </h2>
             <p className="text-gray-700 leading-relaxed">
               James founded 1st Call UK in 2008 after many years of experience in immigration and
-              law. He has served as a Trustee and Director of a local non-profit organisation
+             law. He has served as a Trustee and Director of a local non-profit organisation
               that provides assistance to immigration matters in Nottingham and Nottinghamshire.
               With over <strong>24 years of immigration experience</strong>, James has built a
               reputation for professionalism, dedication, and success.
@@ -72,18 +65,16 @@ export default function TeamPage() {
               <em>“Immigration – Tearing Our Family Apart.”</em>
             </p>
 
-            <div className="mt-6 relative w-full h-[340px] md:h-[420px]">
-              <Image
+            <div className="mt-6">
+              <img
                 src="/james-ramowski-advising-asylum-seeker-1st-call-uk-immigration-services.png"
                 alt="Experienced immigration law advisors"
-                fill
-                sizes="100vw"
-                className="rounded-xl shadow-md object-cover"
+                className="rounded-xl shadow-md w-full object-cover"
               />
             </div>
           </section>
 
-          {/* Biography Section */}
+          {/* ⭐ NEW SECTION: Biography of James Ramowski (Inserted Here) */}
           <section className="fade-section bg-[#f8f9ff] border border-[#dfe3ff] rounded-2xl p-6 md:p-8 shadow-sm">
             <h2 className="text-2xl font-semibold text-[#2d459c] mb-3">
               About James - Our Senior advisor
@@ -108,6 +99,7 @@ export default function TeamPage() {
             </p>
           </section>
 
+
           {/* A Personal Touch */}
           <section className="fade-section">
             <h2 className="text-2xl font-semibold text-[#2d459c] mb-3">
@@ -115,13 +107,13 @@ export default function TeamPage() {
             </h2>
             <p className="text-gray-700 leading-relaxed">
               Beyond his professional life, James is a devoted husband and father. He is currently a trustee of a local charity, <a
-                href="https://www.chayahgroup.co.uk/"
-                style={{ color: "#2d459c", fontWeight: "bold" }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                CHAYAH DEVELOPMENT PROJECT
-              </a>. He is a former Chairman of the Hucknall Round Table — part of Round Table International — and a past
+  href="https://www.chayahgroup.co.uk/"
+  style={{ color: "#2d459c", fontWeight: "bold" }}
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  CHAYAH DEVELOPMENT PROJECT
+</a>. He is a former Chairman of the Hucknall Round Table — part of Round Table International — and a past
               committee member of the Wollaton Royal British Legion Club. Outside of work, he enjoys
               dining, socialising, cycling, and spending quality time with his family, reflecting
               the same empathy and integrity he brings to his clients’ cases.
@@ -129,56 +121,55 @@ export default function TeamPage() {
           </section>
 
           {/* Your Problem is Our Passion */}
-          <section className="fade-section">
-            <h2 className="text-2xl font-semibold text-[#2d459c] mb-3">
-              Your Problem is Our Passion
-            </h2>
-            <p className="text-gray-700 leading-relaxed">
-              As a family-owned and operated business, 1st Call UK stands for dedication,
-              trust, and integrity. Our values are rooted in the personal commitment and
-              consistent involvement of our family, who have built this firm from the
-              ground up. We approach every client’s case with the same care and attention
-              we would give to our own loved ones, ensuring that every individual who
-              walks through our doors feels supported, respected, and understood.
-              <br /><br />
-              Our motto, <strong>“Your problem is our passion,”</strong> is more than a
-              phrase—it reflects the spirit of our work. We embrace the challenges our
-              clients face and treat each case as an opportunity to make a meaningful
-              difference. Whether dealing with a straightforward application or a highly
-              complex matter, we persevere until every option has been explored and every
-              possible step has been taken. Your struggle becomes our mission, and your
-              success is our priority.
-            </p>
+<section className="fade-section">
+  <h2 className="text-2xl font-semibold text-[#2d459c] mb-3">
+    Your Problem is Our Passion
+  </h2>
+  <p className="text-gray-700 leading-relaxed">
+    As a family-owned and operated business, 1st Call UK stands for dedication,
+    trust, and integrity. Our values are rooted in the personal commitment and
+    consistent involvement of our family, who have built this firm from the
+    ground up. We approach every client’s case with the same care and attention
+    we would give to our own loved ones, ensuring that every individual who
+    walks through our doors feels supported, respected, and understood.
+    <br /><br />
+    Our motto, <strong>“Your problem is our passion,”</strong> is more than a
+    phrase—it reflects the spirit of our work. We embrace the challenges our
+    clients face and treat each case as an opportunity to make a meaningful
+    difference. Whether dealing with a straightforward application or a highly
+    complex matter, we persevere until every option has been explored and every
+    possible step has been taken. Your struggle becomes our mission, and your
+    success is our priority.
+  </p>
 
-            <div className="mt-6 relative w-full h-[340px] md:h-[420px]">
-              <Image
-                src="/team-hero-family.png"
-                alt="Our dedicated immigration law team"
-                fill
-                sizes="100vw"
-                className="rounded-xl shadow-md object-cover"
-              />
-            </div>
-          </section>
+  <div className="mt-6">
+    <img
+      src="/team-hero-family.png"
+      alt="Our dedicated immigration law team"
+      className="rounded-xl shadow-md w-full object-cover"
+    />
+  </div>
+</section>
 
-          {/* Family-Owned and Operated */}
-          <section className="fade-section">
-            <h2 className="text-2xl font-semibold text-[#2d459c] mb-3">
-              Family-Owned and Operated Business
-            </h2>
-            <p className="text-gray-700 leading-relaxed">
-              Being a family-run firm shapes the way we work, the way we communicate, and
-              the way we care for our clients. Our close-knit approach means clients are
-              never treated as a number or an appointment slot — they are welcomed as part
-              of our extended family. Decisions are made with integrity, long-term
-              commitment, and genuine concern for the wellbeing of those who rely on us.
-              <br /><br />
-              This personal foundation has enabled us to build lasting relationships and
-              earn the trust of communities across the UK. It is this sense of
-              responsibility, pride, and personal investment that drives us to deliver the
-              highest standard of service in every case we handle.
-            </p>
-          </section>
+{/* Family-Owned and Operated Business */}
+<section className="fade-section">
+  <h2 className="text-2xl font-semibold text-[#2d459c] mb-3">
+    Family-Owned and Operated Business
+  </h2>
+  <p className="text-gray-700 leading-relaxed">
+    Being a family-run firm shapes the way we work, the way we communicate, and
+    the way we care for our clients. Our close-knit approach means clients are
+    never treated as a number or an appointment slot — they are welcomed as part
+    of our extended family. Decisions are made with integrity, long-term
+    commitment, and genuine concern for the wellbeing of those who rely on us.
+    <br /><br />
+    This personal foundation has enabled us to build lasting relationships and
+    earn the trust of communities across the UK. It is this sense of
+    responsibility, pride, and personal investment that drives us to deliver the
+    highest standard of service in every case we handle.
+  </p>
+</section>
+
 
           {/* Highest Level of Authorisation */}
           <section className="fade-section">
@@ -189,7 +180,7 @@ export default function TeamPage() {
               1st Call UK is authorised and regulated by the{" "}
               <strong>Immigration Advice Authority (IAA) - formerly known as the OISC</strong> at the
               highest level. This authorisation empowers us to advise and represent clients in all
-              areas of immigration — from initial applications to appeals before the
+              areas of immigration  — from initial applications to appeals before the
               Upper Tribunal of the Immigration & Asylum Chamber.
             </p>
             <p className="text-gray-700 leading-relaxed mt-4">
@@ -213,7 +204,6 @@ export default function TeamPage() {
               for further information or to arrange an appointment.
             </p>
           </section>
-
         </div>
       </div>
     </main>

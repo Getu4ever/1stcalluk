@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
   // Canonical URL for SEO
   alternates: {
-    canonical: "https://www.1stcallukimmigration.co.uk/about-us",
+    canonical: "https://1stcalluk.com/about-us",
   },
 
   // OpenGraph metadata for richer previews
@@ -15,8 +15,16 @@ export const metadata: Metadata = {
     title: "About Us | 1st Call UK Immigration Services",
     description:
       "Learn about 1st Call UK Immigration Services and our commitment to UK visa and appeal support for individuals, families and businesses.",
-    url: "https://www.1stcallukimmigration.co.uk/about-us",
+    url: "https://1stcalluk.com/about-us",
     type: "article",
+    images: [
+      {
+        url: "https://1stcalluk.com/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "About 1st Call UK Immigration Services",
+      },
+    ],
   },
 };
 
